@@ -1,0 +1,1354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Companion</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="course_companion-completestyle.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="main-header">
+
+        <div class="header-content">
+
+            <div>
+                <p class="eyebrow">STUDENT ACADEMIC HUB</p>
+
+                <h1>College Companion</h1>
+
+                <p class="subtitle">
+                    Everything you need for a smoother college life.
+                </p>
+            </div>
+
+            <div class="header-badge">
+                <span>✦</span>
+                CSE • Semester 3
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="nav-inner">
+
+            <div class="nav-logo">
+                CC
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#dashboard">Dashboard</a>
+
+                <a href="#subjects">Subjects</a>
+
+                <a href="#timetable">Timetable</a>
+
+                <a href="#attendance">Attendance</a>
+
+                <a href="#assignments">Assignments</a>
+
+                <a href="#notes">Notes</a>
+
+                <a href="#exams">Exams</a>
+
+                <a href="#profile">Profile</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <main>
+
+
+        <!-- ================= LOGIN ================= -->
+
+        <section id="login" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">WELCOME BACK</p>
+                    <h2>Student Login</h2>
+                    <p class="section-description">
+                        Sign in to access your academic dashboard.
+                    </p>
+                </div>
+
+                <div class="section-icon">
+                    ♡
+                </div>
+
+            </div>
+
+
+            <form id="loginForm" class="form-box">
+
+                <div class="form-group">
+
+                    <label for="loginEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="loginEmail"
+                        placeholder="you@example.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="loginPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="loginPassword"
+                        placeholder="Enter your password"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="primary-button">
+                    Login
+                </button>
+
+            </form>
+
+
+            <div class="form-footer">
+
+                <span>Don't have an account?</span>
+
+                <a href="#register">
+                    Create an account
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= REGISTRATION ================= -->
+
+        <section id="register" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="section-label">GET STARTED</p>
+
+                    <h2>Create Your Account</h2>
+
+                    <p class="section-description">
+                        Set up your personal College Companion profile.
+                    </p>
+                </div>
+
+                <div class="section-icon">
+                    +
+                </div>
+
+            </div>
+
+
+            <form id="registerForm" class="form-box">
+
+                <div class="form-group">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="registerName"
+                        placeholder="Enter your full name"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="registerEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="you@example.com"
+                    >
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="registerPassword">
+                            Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="registerPassword"
+                            placeholder="Create a password"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm password"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="registerBranch">
+                            Branch
+                        </label>
+
+                        <select id="registerBranch">
+
+                            <option>CSE</option>
+                            <option>ISE</option>
+                            <option>ECE</option>
+                            <option>EEE</option>
+                            <option>Mechanical</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="registerSemester">
+                            Semester
+                        </label>
+
+                        <select id="registerSemester">
+
+                            <option>1st Semester</option>
+                            <option>2nd Semester</option>
+                            <option selected>3rd Semester</option>
+                            <option>4th Semester</option>
+                            <option>5th Semester</option>
+                            <option>6th Semester</option>
+                            <option>7th Semester</option>
+                            <option>8th Semester</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="primary-button">
+                    Create Account
+                </button>
+
+            </form>
+
+        </section>
+
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard" class="section-card dashboard-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        YOUR ACADEMIC SPACE
+                    </p>
+
+                    <h2>Good to see you, Priya ♡</h2>
+
+                    <p class="section-description">
+                        Here's a quick look at your college life.
+                    </p>
+
+                </div>
+
+                <div class="date-badge">
+                    2026
+                </div>
+
+            </div>
+
+
+            <div class="dashboard-cards">
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            %
+                        </span>
+
+                        <span class="small-label">
+                            ATTENDANCE
+                        </span>
+
+                    </div>
+
+                    <h3 class="big-number">
+                        86%
+                    </h3>
+
+                    <p>
+                        Current attendance
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            ✓
+                        </span>
+
+                        <span class="small-label">
+                            ASSIGNMENTS
+                        </span>
+
+                    </div>
+
+                    <h3 class="big-number">
+                        3
+                    </h3>
+
+                    <p>
+                        Pending assignments
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            ◷
+                        </span>
+
+                        <span class="small-label">
+                            EXAMS
+                        </span>
+
+                    </div>
+
+                    <h3 class="big-number">
+                        2
+                    </h3>
+
+                    <p>
+                        Upcoming exams
+                    </p>
+
+                </div>
+
+
+                <div class="dashboard-card">
+
+                    <div class="card-top">
+
+                        <span class="card-icon">
+                            ▤
+                        </span>
+
+                        <span class="small-label">
+                            NOTES
+                        </span>
+
+                    </div>
+
+                    <h3 class="big-number">
+                        15
+                    </h3>
+
+                    <p>
+                        Notes available
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= SUBJECTS ================= -->
+
+        <section id="subjects" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        ACADEMICS
+                    </p>
+
+                    <h2>Subjects</h2>
+
+                    <p class="section-description">
+                        Your current semester subjects and faculty.
+                    </p>
+
+                </div>
+
+                <div class="section-icon">
+                    ◫
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Subject</th>
+                            <th>Code</th>
+                            <th>Faculty</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>Data Structures</strong>
+                            </td>
+
+                            <td>CS301</td>
+
+                            <td>Dr. Smith</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Computer Networks</strong>
+                            </td>
+
+                            <td>CS302</td>
+
+                            <td>Prof. Kumar</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>DBMS</strong>
+                            </td>
+
+                            <td>CS303</td>
+
+                            <td>Prof. Sharma</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>Object Oriented Programming</strong>
+                            </td>
+
+                            <td>CS304</td>
+
+                            <td>Dr. Rao</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= TIMETABLE ================= -->
+
+        <section id="timetable" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        WEEKLY PLAN
+                    </p>
+
+                    <h2>Timetable</h2>
+
+                    <p class="section-description">
+                        Keep track of your classes throughout the week.
+                    </p>
+
+                </div>
+
+                <div class="section-icon">
+                    ◷
+                </div>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Day</th>
+                            <th>9:00 – 10:00</th>
+                            <th>10:00 – 11:00</th>
+                            <th>11:15 – 12:15</th>
+                            <th>1:00 – 2:00</th>
+                            <th>2:00 – 3:00</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td><strong>Monday</strong></td>
+
+                            <td>DA</td>
+                            <td>CN</td>
+                            <td>DBMS</td>
+                            <td>OOPS</td>
+                            <td>Cloud</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td><strong>Tuesday</strong></td>
+
+                            <td>CN</td>
+                            <td>DA</td>
+                            <td>OOPS</td>
+                            <td>DBMS</td>
+                            <td>SE</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td><strong>Wednesday</strong></td>
+
+                            <td>DBMS</td>
+                            <td>Cloud</td>
+                            <td>CN</td>
+                            <td>DA</td>
+                            <td>POCD</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td><strong>Thursday</strong></td>
+
+                            <td>OOPS</td>
+                            <td>SE</td>
+                            <td>DA</td>
+                            <td>CN</td>
+                            <td>DBMS</td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td><strong>Friday</strong></td>
+
+                            <td>Cloud</td>
+                            <td>DBMS</td>
+                            <td>POCD</td>
+                            <td>OOPS</td>
+                            <td>SE</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ATTENDANCE ================= -->
+
+        <section id="attendance" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        ATTENDANCE TRACKER
+                    </p>
+
+                    <h2>Attendance</h2>
+
+                    <p class="section-description">
+                        Check your attendance percentage instantly.
+                    </p>
+
+                </div>
+
+                <div class="section-icon">
+                    %
+                </div>
+
+            </div>
+
+
+            <div class="attendance-grid">
+
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Subject</th>
+                                <th>Attended</th>
+                                <th>Total</th>
+                                <th>Percentage</th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td>DA</td>
+                                <td>23</td>
+                                <td>25</td>
+                                <td>92%</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>CN</td>
+                                <td>21</td>
+                                <td>25</td>
+                                <td>84%</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>DBMS</td>
+                                <td>22</td>
+                                <td>25</td>
+                                <td>88%</td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td>OOPS</td>
+                                <td>20</td>
+                                <td>24</td>
+                                <td>83%</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <div class="calculator-card">
+
+                    <p class="section-label">
+                        QUICK CALCULATOR
+                    </p>
+
+                    <h3>
+                        Calculate Attendance
+                    </h3>
+
+                    <div class="form-group">
+
+                        <label for="attendedClasses">
+                            Classes Attended
+                        </label>
+
+                        <input
+                            type="number"
+                            id="attendedClasses"
+                            placeholder="e.g. 22"
+                            min="0"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="totalClasses">
+                            Total Classes
+                        </label>
+
+                        <input
+                            type="number"
+                            id="totalClasses"
+                            placeholder="e.g. 25"
+                            min="1"
+                        >
+
+                    </div>
+
+
+                    <button
+                        id="calculateAttendanceBtn"
+                        class="primary-button"
+                    >
+                        Calculate
+                    </button>
+
+
+                    <p
+                        id="attendanceResult"
+                        class="calculator-result"
+                    >
+                        Enter your class details above.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ASSIGNMENTS ================= -->
+
+        <section id="assignments" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        TASK MANAGEMENT
+                    </p>
+
+                    <h2>Assignments</h2>
+
+                    <p class="section-description">
+                        Stay on top of your academic deadlines.
+                    </p>
+
+                </div>
+
+                <div class="section-icon">
+                    ✓
+                </div>
+
+            </div>
+
+
+            <div id="assignmentList">
+
+
+                <div class="assignment pending">
+
+                    <div>
+
+                        <span class="assignment-tag">
+                            PENDING
+                        </span>
+
+                        <h3>
+                            Data Structures Lab
+                        </h3>
+
+                        <p>
+                            Complete linked list implementation.
+                        </p>
+
+                    </div>
+
+                    <button class="completeAssignment">
+                        Mark Complete
+                    </button>
+
+                </div>
+
+
+                <div class="assignment pending">
+
+                    <div>
+
+                        <span class="assignment-tag">
+                            PENDING
+                        </span>
+
+                        <h3>
+                            Computer Networks Assignment
+                        </h3>
+
+                        <p>
+                            Prepare subnetting questions.
+                        </p>
+
+                    </div>
+
+                    <button class="completeAssignment">
+                        Mark Complete
+                    </button>
+
+                </div>
+
+
+                <div class="assignment completed">
+
+                    <div>
+
+                        <span class="assignment-tag">
+                            COMPLETED
+                        </span>
+
+                        <h3>
+                            DBMS Mini Assignment
+                        </h3>
+
+                        <p>
+                            SQL query practice completed.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                id="addAssignmentBtn"
+                class="secondary-button"
+            >
+                + Add Assignment
+            </button>
+
+        </section>
+
+
+
+        <!-- ================= NOTES ================= -->
+
+        <section id="notes" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        STUDY MATERIAL
+                    </p>
+
+                    <h2>Notes</h2>
+
+                    <p class="section-description">
+                        Quickly find the notes you need.
+                    </p>
+
+                </div>
+
+                <div class="section-icon">
+                    ▤
+                </div>
+
+            </div>
+
+
+            <div class="search-box">
+
+                <span>⌕</span>
+
+                <input
+                    type="text"
+                    id="searchNotes"
+                    placeholder="Search your notes..."
+                >
+
+            </div>
+
+
+            <div class="notes-grid">
+
+                <div class="note">
+
+                    <span class="note-icon">
+                        DA
+                    </span>
+
+                    <div>
+
+                        <h3>Data Structures</h3>
+
+                        <p>
+                            Stacks, queues, linked lists and trees.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="note">
+
+                    <span class="note-icon">
+                        CN
+                    </span>
+
+                    <div>
+
+                        <h3>Computer Networks</h3>
+
+                        <p>
+                            OSI model, TCP/IP and networking basics.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="note">
+
+                    <span class="note-icon">
+                        DB
+                    </span>
+
+                    <div>
+
+                        <h3>DBMS</h3>
+
+                        <p>
+                            SQL, normalization and transactions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="note">
+
+                    <span class="note-icon">
+                        OP
+                    </span>
+
+                    <div>
+
+                        <h3>OOPS</h3>
+
+                        <p>
+                            Classes, inheritance and polymorphism.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="note">
+
+                    <span class="note-icon">
+                        CC
+                    </span>
+
+                    <div>
+
+                        <h3>Cloud Computing</h3>
+
+                        <p>
+                            Cloud models and virtualization.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="note">
+
+                    <span class="note-icon">
+                        SE
+                    </span>
+
+                    <div>
+
+                        <h3>Software Engineering</h3>
+
+                        <p>
+                            SDLC, models and software processes.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= EXAMS ================= -->
+
+        <section id="exams" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        IMPORTANT DATES
+                    </p>
+
+                    <h2>Exams</h2>
+
+                    <p class="section-description">
+                        Keep your upcoming examinations in sight.
+                    </p>
+
+                </div>
+
+                <div class="section-icon">
+                    ◷
+                </div>
+
+            </div>
+
+
+            <div class="countdown-box">
+
+                <span class="countdown-label">
+                    NEXT EXAM COUNTDOWN
+                </span>
+
+                <p id="examCountdown">
+                    Loading countdown...
+                </p>
+
+            </div>
+
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Subject</th>
+                            <th>Date</th>
+                            <th>Time</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>
+                                <strong>DBMS</strong>
+                            </td>
+
+                            <td>
+                                10 October 2026
+                            </td>
+
+                            <td>
+                                10:00 AM
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>CN</strong>
+                            </td>
+
+                            <td>
+                                13 October 2026
+                            </td>
+
+                            <td>
+                                10:00 AM
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                <strong>OOPS</strong>
+                            </td>
+
+                            <td>
+                                16 October 2026
+                            </td>
+
+                            <td>
+                                2:00 PM
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= PROFILE ================= -->
+
+        <section id="profile" class="section-card">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <p class="section-label">
+                        YOUR ACCOUNT
+                    </p>
+
+                    <h2>Student Profile</h2>
+
+                    <p class="section-description">
+                        Your College Companion profile information.
+                    </p>
+
+                </div>
+
+                <div class="profile-avatar">
+                    P
+                </div>
+
+            </div>
+
+
+            <div class="profile-layout">
+
+                <div class="profile-details">
+
+                    <div class="profile-item">
+
+                        <span>Name</span>
+
+                        <strong id="profileName">
+                            Priya
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <span>Branch</span>
+
+                        <strong>
+                            Computer Science and Engineering
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <span>Semester</span>
+
+                        <strong>
+                            3rd Semester
+                        </strong>
+
+                    </div>
+
+
+                    <div class="profile-item">
+
+                        <span>College</span>
+
+                        <strong>
+                            KLE Technological University
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="profile-side">
+
+                    <div class="profile-quote">
+
+                        <span>✦</span>
+
+                        <p>
+                            Stay consistent. Small progress every day
+                            becomes something big.
+                        </p>
+
+                    </div>
+
+
+                    <button
+                        id="editProfileBtn"
+                        class="primary-button"
+                    >
+                        Edit Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            College Companion
+        </div>
+
+        <p>
+            A simple academic space made for students.
+        </p>
+
+        <span>
+            © 2026 College Companion
+        </span>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
